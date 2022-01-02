@@ -1,0 +1,33 @@
+/* ---------Commot settings------------ */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper, header, section, footer, main {
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+$mainFont: 'Roboto', sans-serif;
+$mainFontWeight: 400;
+$colorDark: #000000;
+$colorLight: #FFFFFF;
+$mainColor: #9AA8B1;
+$infoColor: #A0A0A0;
+$footerColor: #F9F9F9;
+$H1size: 6.6rem; 
+$bigTitleSize: 4.3rem;
+$titleSize: 3.4rem;
+$middleSize: 2.7rem; 
+$footerSize: 2.2rem;
+$mainSize: 1.4rem;
+$smallSize: 1.3rem;
+@mixin textStyle($Font, $Size, $Weight, $LH, $color){
+    font-family: $Font;
+    font-size:$Size;
+    line-height:$LH;
+    font-weight:$Weight;
+    color: $color;
+}

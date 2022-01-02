@@ -1,0 +1,48 @@
+/* ---------Commot settings------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html{
+    font-size: 10px;
+    line-height: 10px;
+}
+body{
+    overflow-x: hidden; 
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.wrapper, header, section, footer, main{
+    overflow-x: hidden;
+}
+// .title{
+//     width: 100%;
+//     margin: 0 auto;
+//     padding-top: 18rem;
+//     text-transform: capitalize;
+//     text-align: center;
+// }
+// .text{
+//     width: 100%;
+//     margin: 0 auto;
+//     text-align: center;
+// }
+// .link{
+//     display: block;
+//     width: 100%;
+//     margin: 0 auto;
+//     text-transform: uppercase;
+//     text-align: center;
+//     &:hover{
+//         text-decoration: underline;
+//     }
+// }
