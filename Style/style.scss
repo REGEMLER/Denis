@@ -108,3 +108,25 @@
       }
   }
 } 
+
+@media screen and (min-width: 576px){
+    .header-container{
+        min-width: 576px;
+        .menu-link2, .menu-link3, .menu-link4, .menu-link5{
+            margin-bottom: 20px;
+            font-size: $middleSize;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}

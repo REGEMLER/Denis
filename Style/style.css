@@ -166,4 +166,14 @@ a {
     text-align: center;
   }
 }
+
+@media screen and (min-width: 576px) {
+  .header-container {
+    min-width: 576px;
+  }
+  .header-container .menu-link2, .header-container .menu-link3, .header-container .menu-link4, .header-container .menu-link5 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
