@@ -1,5 +1,110 @@
 @import "reset";
 @import "variables";
-body{
-    background-color: aqua;
-}
+
+@media screen and (min-width: 320px) {
+  // -----------------header-------------------------
+  .header-container{
+      min-width: 320px;
+      width: 100vw;
+      margin: 0 auto;
+      background-image: url(../IMG/Mobile/header.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .header-menu{
+      width: 100%;
+      margin: 0 auto;
+      padding: 5%;
+      position: relative;
+      #checkbox-menu{
+          display: none;
+      }
+  }
+  .toggle{
+      clear: both;
+      display: block;
+      width: 100%;
+      @include textStyle($secondFont, $subTitleSize, $secondFontWeight, 40px, $buttonColor);
+      background-color: transparent;
+      text-align: right;
+      position: absolute;
+      top: 20px;
+      right: 5%;
+  }
+  #checkbox-menu:checked + label .header-list{
+    height: 7rem;
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s linear;
+  }
+  .header-list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: height .3s linear;
+      a{
+          @include textStyle($secondFont, $linkSize, $secondFontWeight, 19px, $colorLight);
+          text-transform: uppercase;
+      }
+      .menu-link2, .menu-link3, .menu-link4, .menu-link5{
+          display: block;
+          margin-bottom: 10px;
+      }
+  }
+  .header-logo{
+      display: block;
+      height: 30px;
+      width: 44px;
+      position: absolute;
+      top: 20px;
+      left: 5%;
+      img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+  .menu-link6, .header-line, .menu-link7, .menu-link8{
+      display: none;
+  }
+  .header-content{
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 14rem;
+      padding-bottom: 18rem;
+      .header-title{
+      @include textStyle($mainFont, $numberSize2, $mainFontWeight, 35px, $mainColor);
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      }
+      h1{
+        @include textStyle($mainFont, $numberSize, $mainFontWeight, 46px, $mainColor);
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .header-btn1{
+          display: none;
+      }
+      .header-btn2{
+          width: 140px;
+          height: 50px;
+          margin: 0 auto;
+          margin-top: 45px;
+          background-color: $buttonColor;
+          a{
+            display: block;
+            @include textStyle($secondFont, $linkSize, $secondFontWeight, 50px, $colorLight);
+            text-transform: uppercase;
+            text-align: center;
+          }
+      }
+  }
+} 
