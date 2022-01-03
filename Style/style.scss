@@ -1,10 +1,9 @@
 @import "reset";
 @import "variables";
 
-@media screen and (min-width: 320px) {
+
   // -----------------header-------------------------
   .header-container{
-      min-width: 320px;
       width: 100vw;
       margin: 0 auto;
       background-image: url(../IMG/Mobile/header.png);
@@ -90,6 +89,15 @@
         text-align: center;
         margin-top: 10px;
       }
+      .header-subtitle{
+        @include textStyle($secondFont, $smallSize, $mainFontWeight, 24px, $colorLight);
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 45px;
+      
+    }
       .header-btn1{
           display: none;
       }
@@ -107,7 +115,7 @@
           }
       }
   }
-} 
+
 
 @media screen and (min-width: 576px){
     .header-container{
@@ -120,6 +128,147 @@
 }
 
 @media screen and (min-width: 768px){
+    .header-container{
+        width: 100vw;
+        margin: 0 auto;
+        background-image: url(../IMG/BGR/header.png);
+    }
+    .header-menu{
+        width: 100%;
+        margin: 0 auto;
+        padding: 5%;
+        position: relative;
+    }
+    .toggle{
+        display: none;
+    }
+    .header-list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin: 0;
+        opacity: 1;
+        visibility: visible;
+        a{
+            @include textStyle($secondFont, $linkSize, $secondFontWeight, 19px, $colorLight);
+            text-transform: uppercase;
+        }
+        .menu-link2, .menu-link3, .menu-link4, .menu-link5{
+            display: block;
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+    .header-logo{
+        display: block;
+        height: auto;
+        width: auto;
+        position: absolute;
+        top: 20px;
+        left: 5%;
+    }
+    .menu-link6{
+        display: block;
+        margin-right: 20px;
+    }
+    .header-line{
+        display: block;
+        height: 50px;
+        border-left: 1px solid $colorLight;
+        margin-right: 20px;
+    }
+    .menu-link7{
+        display: block;
+        ul{
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            .header-tel{
+                @include textStyle($secondFont, $smallSize, $secondFontWeight, 25px, $colorLight);
+            }
+            .header-tel-text{
+                @include textStyle($secondFont, $linkSize, $mainFontWeight, 19px, $colorLight);
+                width: 80%;
+            }
+        }
+    }
+    .menu-btn{
+        display: block;
+        width: 160px;
+        height: 50px;
+        background-color: $buttonColor;
+        transition: all .4s linear;
+        &:hover{
+            transform: scale(1.1);
+        }
+        a{
+            display: block;
+            @include textStyle($secondFont, $linkSize, $secondFontWeight, 50px, $colorLight);
+            text-transform: uppercase;
+            text-align: center;
+          }
+    }
+    .header-content{
+        width: 50%;
+        margin: 15rem 150px;
+        .header-title{
+        @include textStyle($mainFont, $reserveSize2, $mainFontWeight, 60px, $mainColor);
+        width: 100%;
+        margin: 0 auto;
+        }
+        h1{
+          @include textStyle($mainFont, $H1size, $mainFontWeight, 91px, $mainColor);
+          width: 100%;
+          margin: 0 auto;
+          margin-top: 10px;
+        }
+        .header-subtitle{
+            @include textStyle($secondFont, $smallSize, $mainFontWeight, 24px, $colorLight);
+          width: 100%;
+          margin: 0 auto;
+          margin-top: 10px;
+          position: relative;
+          &::before{
+              content: " ";
+              width: 60px;
+              border-top: 2px solid $colorLight;
+              position: absolute;
+              top: 50%;
+              left: 25%;
+          }
+          &::after{
+            content: " ";
+            width: 60px;
+            border-top: 2px solid $colorLight;
+            position: absolute;
+            top: 50%;
+            left: 65%;
+        }
+        }
+        .header-btn1{
+            display: block;
+            width: 140px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 25px;
+            background-color: $buttonColor;
+            transition: all .4s linear;
+            a{
+              display: block;
+              @include textStyle($secondFont, $linkSize, $secondFontWeight, 50px, $colorLight);
+              text-transform: uppercase;
+              text-align: center;
+            }
+            &:hover{
+                transform: scale(1.1);
+        }
+        }
+        .header-btn2{
+            display: none;
+        }
+    }
 
 }
 
