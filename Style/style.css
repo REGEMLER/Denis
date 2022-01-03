@@ -11,7 +11,6 @@
 }
 
 html {
-  font-size: 10px;
   line-height: 10px;
 }
 
@@ -29,5 +28,9 @@ a {
 
 .wrapper, header, section, footer, main {
   overflow-x: hidden;
+}
+
+body {
+  background-color: aqua;
 }
 /*# sourceMappingURL=style.css.map */
