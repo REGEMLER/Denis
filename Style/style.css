@@ -16,6 +16,7 @@ html {
 
 body {
   overflow-x: hidden;
+  font-weight: 400;
 }
 
 ul, ol, li {
@@ -30,19 +31,24 @@ a {
   overflow-x: hidden;
 }
 
-.header-container {
-  width: 100vw;
-  margin: 0 auto;
+.header {
   background-image: url(../IMG/Mobile/header.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  min-height: 800px;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.header-container {
+  padding: 0 15px;
+  max-width: 546px;
 }
 
 .header-menu {
   width: 100%;
-  margin: 0 auto;
-  padding: 5%;
+  margin: 2rem auto;
   position: relative;
 }
 
@@ -57,13 +63,13 @@ a {
   font-family: "Open Sans", sans-serif;
   font-size: 26px;
   line-height: 40px;
-  font-weight: 700;
   color: #FF7400;
+  font-weight: 700;
   background-color: transparent;
   text-align: right;
   position: absolute;
-  top: 20px;
-  right: 5%;
+  top: -10px;
+  right: 0;
 }
 
 #checkbox-menu:checked + label .header-list {
@@ -89,16 +95,16 @@ a {
   margin: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: height .3s linear;
-  transition: height .3s linear;
+  -webkit-transition: height .4s linear;
+  transition: height .4s linear;
 }
 
 .header-list a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
-  font-weight: 700;
   color: #FFFFFF;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -112,8 +118,8 @@ a {
   height: 30px;
   width: 44px;
   position: absolute;
-  top: 20px;
-  left: 5%;
+  top: 0;
+  left: 0;
 }
 
 .header-logo img {
@@ -130,26 +136,23 @@ a {
 .header-content {
   width: 100%;
   margin: 0 auto;
-  margin-top: 14rem;
-  padding-bottom: 18rem;
 }
 
 .header-content .header-title {
   font-family: "Tinos", serif;
   font-size: 30px;
   line-height: 35px;
-  font-weight: 400;
   color: #D67E35;
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  margin-top: 14rem;
 }
 
 .header-content h1 {
   font-family: "Tinos", serif;
   font-size: 2.5rem;
   line-height: 46px;
-  font-weight: 400;
   color: #D67E35;
   width: 100%;
   margin: 0 auto;
@@ -159,15 +162,14 @@ a {
 
 .header-content .header-subtitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
   color: #FFFFFF;
   width: 100%;
   margin: 0 auto;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 45px;
+  text-transform: uppercase;
 }
 
 .header-content .header-btn1 {
@@ -179,7 +181,16 @@ a {
   height: 50px;
   margin: 0 auto;
   margin-top: 45px;
+  border-radius: 1px;
   background-color: #FF7400;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.header-content .header-btn2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #D67E35;
 }
 
 .header-content .header-btn2 a {
@@ -187,15 +198,16 @@ a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 50px;
-  font-weight: 700;
   color: #FFFFFF;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 }
 
 @media screen and (min-width: 576px) {
   .header-container {
-    min-width: 576px;
+    max-width: 728px;
+    padding: 0 20px;
   }
   .header-container .menu-link2, .header-container .menu-link3, .header-container .menu-link4, .header-container .menu-link5 {
     margin-bottom: 20px;
@@ -205,15 +217,35 @@ a {
 
 @media screen and (min-width: 768px) {
   .header-container {
-    width: 100vw;
-    margin: 0 auto;
-    background-image: url(../IMG/BGR/header.png);
+    max-width: 942px;
+    padding: 0 25px;
   }
-  .header-menu {
-    width: 100%;
-    margin: 0 auto;
-    padding: 5%;
-    position: relative;
+  .header-container .menu-link2, .header-container .menu-link3, .header-container .menu-link4, .header-container .menu-link5 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .header-content .header-title {
+    font-size: 2.5rem;
+  }
+  .header-content h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .header-content .header-subtitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    background-image: url(../IMG/BGR/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .header-container {
+    padding: 0 50px;
+    max-width: 1100px;
   }
   .toggle {
     display: none;
@@ -236,40 +268,42 @@ a {
     margin: 0;
     opacity: 1;
     visibility: visible;
+    margin-left: 50px;
   }
   .header-list a {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 19px;
-    font-weight: 700;
     color: #FFFFFF;
+    font-weight: 700;
     text-transform: uppercase;
   }
   .header-list .menu-link2, .header-list .menu-link3, .header-list .menu-link4, .header-list .menu-link5 {
     display: block;
     margin-bottom: 0;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .header-logo {
     display: block;
     height: auto;
     width: auto;
     position: absolute;
-    top: 20px;
-    left: 5%;
+    top: 0;
+    left: 0;
   }
   .menu-link6 {
     display: block;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .header-line {
     display: block;
     height: 50px;
     border-left: 1px solid #FFFFFF;
-    margin-right: 20px;
   }
   .menu-link7 {
-    display: block;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 20px;
   }
   .menu-link7 ul {
     display: -webkit-box;
@@ -279,64 +313,59 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 20px;
   }
   .menu-link7 ul .header-tel {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     line-height: 25px;
-    font-weight: 700;
     color: #FFFFFF;
+    font-weight: 700;
   }
   .menu-link7 ul .header-tel-text {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 19px;
-    font-weight: 400;
     color: #FFFFFF;
-    width: 80%;
   }
   .menu-btn {
     display: block;
     width: 160px;
     height: 50px;
     background-color: #FF7400;
+    border-radius: 1px;
     -webkit-transition: all .4s linear;
     transition: all .4s linear;
   }
   .menu-btn:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+    background-color: #D67E35;
   }
   .menu-btn a {
     display: block;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 50px;
-    font-weight: 700;
     color: #FFFFFF;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-  }
-  .header-content {
-    width: 50%;
-    margin: 15rem 150px;
   }
   .header-content .header-title {
     font-family: "Tinos", serif;
     font-size: 50px;
     line-height: 60px;
-    font-weight: 400;
     color: #D67E35;
     width: 100%;
     margin: 0 auto;
+    margin-top: 15rem;
   }
   .header-content h1 {
     font-family: "Tinos", serif;
     font-size: 5rem;
-    line-height: 91px;
-    font-weight: 400;
+    line-height: 90px;
     color: #D67E35;
+    font-weight: 700;
     width: 100%;
     margin: 0 auto;
     margin-top: 10px;
@@ -345,7 +374,6 @@ a {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
     color: #FFFFFF;
     width: 100%;
     margin: 0 auto;
@@ -353,16 +381,16 @@ a {
     position: relative;
   }
   .header-content .header-subtitle::before {
-    content: " ";
-    width: 60px;
+    content: "";
+    width: 70px;
     border-top: 2px solid #FFFFFF;
     position: absolute;
     top: 50%;
     left: 25%;
   }
   .header-content .header-subtitle::after {
-    content: " ";
-    width: 60px;
+    content: "";
+    width: 70px;
     border-top: 2px solid #FFFFFF;
     position: absolute;
     top: 50%;
@@ -377,23 +405,92 @@ a {
     background-color: #FF7400;
     -webkit-transition: all .4s linear;
     transition: all .4s linear;
+    border-radius: 1px;
   }
   .header-content .header-btn1 a {
     display: block;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 50px;
-    font-weight: 700;
     color: #FFFFFF;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
   }
   .header-content .header-btn1:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+    background-color: #D67E35;
   }
   .header-content .header-btn2 {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    padding: 0 165px;
+    max-width: 6000px;
+  }
+  .header-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 220px;
+  }
+  .header-list a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .header-list .menu-link2, .header-list .menu-link3, .header-list .menu-link4, .header-list .menu-link5 {
+    margin-right: 20px;
+  }
+  .menu-link6 {
+    display: block;
+    margin-right: 15px;
+  }
+  .menu-link7 {
+    margin-left: 30px;
+  }
+  .menu-link7 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-link7 ul .header-tel {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+  .menu-link7 ul .header-tel-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+  .menu-btn {
+    margin-left: 45px;
+  }
+  .menu-btn a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 50px;
+    color: #FFFFFF;
+  }
+  .header-content {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 175px;
   }
 }
 /*# sourceMappingURL=style.css.map */

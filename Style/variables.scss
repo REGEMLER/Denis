@@ -1,8 +1,6 @@
 $mainFont: 'Tinos', serif;
 $secondFont: 'Open Sans', sans-serif;
 $thirdFont:  'Cookie', cursive;
-$mainFontWeight: 400;
-$secondFontWeight: 700;
 $colorDark: #000000;
 $colorLight: #FFFFFF;
 $mainColor: #D67E35;
@@ -19,10 +17,9 @@ $middleSize: 20px;
 $smallSize: 18px;
 $textSize: 1rem;
 $linkSize: 14px;
-@mixin textStyle($Font, $Size, $Weight, $LH, $color){
+@mixin textStyle($Font, $Size, $LH, $color){
     font-family: $Font;
     font-size:$Size;
     line-height:$LH;
-    font-weight:$Weight;
     color: $color;
 }
