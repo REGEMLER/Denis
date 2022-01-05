@@ -370,7 +370,10 @@ a {
     margin: 0 auto;
     margin-top: 10px;
   }
-  .header-content .header-subtitle {
+  .header-content .header-slogan {
+    position: relative;
+  }
+  .header-content .header-slogan .header-subtitle {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -378,23 +381,24 @@ a {
     width: 100%;
     margin: 0 auto;
     margin-top: 10px;
-    position: relative;
   }
-  .header-content .header-subtitle::before {
-    content: "";
+  .header-content .header-slogan .header-content-line1 {
     width: 70px;
     border-top: 2px solid #FFFFFF;
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 32%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
-  .header-content .header-subtitle::after {
-    content: "";
+  .header-content .header-slogan .header-content-line2 {
     width: 70px;
     border-top: 2px solid #FFFFFF;
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 60%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .header-content .header-btn1 {
     display: block;
@@ -479,7 +483,7 @@ a {
     color: #FFFFFF;
   }
   .menu-btn {
-    margin-left: 45px;
+    margin-left: 40px;
   }
   .menu-btn a {
     font-family: "Open Sans", sans-serif;
@@ -491,6 +495,14 @@ a {
     width: 50%;
     margin-left: 0;
     margin-right: 175px;
+  }
+  .header-content .header-slogan .header-content-line1 {
+    top: 50%;
+    left: 17%;
+  }
+  .header-content .header-slogan .header-content-line2 {
+    top: 50%;
+    left: 72%;
   }
 }
 /*# sourceMappingURL=style.css.map */
