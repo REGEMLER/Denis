@@ -28,6 +28,8 @@ a {
 }
 
 .wrapper, header, section, footer, main {
+  width: 100%;
+  margin: 0 auto;
   overflow-x: hidden;
 }
 /*# sourceMappingURL=reset.css.map */
