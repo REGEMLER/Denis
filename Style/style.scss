@@ -593,6 +593,10 @@
      justify-content: center;
      .footer-gallery_item{
          margin-bottom: 20px;
+         transition: all 2s linear;
+         &:hover{
+             transform: rotateY(360deg);
+         }
      }
  }
  .footer-bg{
