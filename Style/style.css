@@ -735,6 +735,10 @@ a {
   min-height: 2000px;
 }
 
+.gallery .gallery-cuadr1, .gallery .gallery-cuadr2 {
+  display: none;
+}
+
 .gallery-container {
   padding: 0 15px;
   max-width: 546px;
@@ -1742,6 +1746,24 @@ a {
   .gallery-container {
     padding: 0 150px;
     max-width: 6000px;
+  }
+  .gallery {
+    position: relative;
+  }
+  .gallery .gallery-cuadr1, .gallery .gallery-cuadr2 {
+    display: block;
+    color: red;
+    background-color: red;
+    width: 30px;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+  }
+  .gallery .gallery-cuadr1 {
+    right: 0;
+  }
+  .gallery .gallery-cuadr2 {
+    left: 0;
   }
   .footer-content {
     padding: 0 165px;

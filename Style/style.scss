@@ -502,10 +502,14 @@
      }
  }
  // -----------------gallery-------------------------
+ 
  .gallery{
      width: 100%;
      margin: 0 auto;
      min-height: 2000px;
+     .gallery-cuadr1, .gallery-cuadr2{
+        display: none;
+    }
  }
  .gallery-container{
     padding: 0 15px; 
@@ -1407,6 +1411,25 @@
         padding: 0 150px; 
         max-width: 6000px;
      }
+     .gallery{
+        position: relative;
+        .gallery-cuadr1, .gallery-cuadr2{
+            display: block;
+            color: red;
+            background-color: red;
+            width: 30px;
+            height: 100px;
+            position: absolute;
+            top: 25%;
+    
+        }
+        .gallery-cuadr1{
+            right: 0;
+        }
+        .gallery-cuadr2{
+            left: 0;
+        }
+    }
      // -----------------footer-------------------------
      .footer-content{
         padding: 0 165px; 
