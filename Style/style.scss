@@ -490,6 +490,13 @@
      }
      .comment-foto{
          margin-top: 20px;
+         text-align: center;
+         img{
+             display: block;
+             width: auto;
+             margin: 0 auto;
+             text-align: center;
+         }
      }
      .comments-title{
         @include textStyle($secondFont, $middleSize, 27px, $colorDark);
@@ -499,6 +506,25 @@
      .comments-name{
         @include textStyle($secondFont, $middleSize, 27px, $colorDark);
         margin-top: 10px;
+     }
+ }
+ .slick-dots{
+     display: flex;
+     justify-content: center;
+     button{
+         font-size: 0;
+         border: none;
+         padding: 0;
+         background-color: #C4C4C4;
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         margin: 0 10px;
+         transition: all .4s linear;
+         &:hover{
+            border: 1px solid $buttonColor;
+         }
+
      }
  }
  // -----------------gallery-------------------------

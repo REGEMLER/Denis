@@ -710,6 +710,14 @@ a {
 
 .comments-inner .comment-foto {
   margin-top: 20px;
+  text-align: center;
+}
+
+.comments-inner .comment-foto img {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .comments-inner .comments-title {
@@ -727,6 +735,32 @@ a {
   line-height: 27px;
   color: #000000;
   margin-top: 10px;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-dots button {
+  font-size: 0;
+  border: none;
+  padding: 0;
+  background-color: #C4C4C4;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.slick-dots button:hover {
+  border: 1px solid #FF7400;
 }
 
 .gallery {
