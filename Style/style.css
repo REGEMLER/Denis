@@ -681,6 +681,54 @@ a {
   left: 0;
 }
 
+.comments {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #E5E4E4;
+  min-height: 600px;
+}
+
+.comments-container {
+  padding: 0 15px;
+  max-width: 546px;
+}
+
+.comments-inner {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.comments-inner .comments-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.comments-inner .comment-foto {
+  margin-top: 20px;
+}
+
+.comments-inner .comments-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.comments-inner .comments-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 576px) {
   .header-container {
     max-width: 728px;
@@ -745,6 +793,10 @@ a {
     padding: 0 20px;
     max-width: 728px;
   }
+  .comments-container {
+    padding: 0 20px;
+    max-width: 728px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -802,6 +854,10 @@ a {
   }
   .menu-cards .menu-card2 {
     display: block;
+  }
+  .comments-container {
+    padding: 0 25px;
+    max-width: 942px;
   }
 }
 
@@ -1341,6 +1397,13 @@ a {
     margin-top: 0;
     margin-right: 20px;
   }
+  .comments-container {
+    padding: 0 50px;
+    max-width: 1100px;
+  }
+  .comments-inner .comments-text {
+    margin-top: 100px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1434,6 +1497,10 @@ a {
   }
   .menu-container {
     padding: 0 160px;
+    max-width: 6000px;
+  }
+  .comments-container {
+    padding: 0 260px;
     max-width: 6000px;
   }
 }
