@@ -273,7 +273,58 @@
             object-fit: cover;
         }
     }
-}
+ }
+ // -----------------reserve------------------------- 
+ .reserve{
+     width: 100%;
+     margin: 0 auto;
+     min-height: 360px;
+     background-image: url(../IMG/Mobile/bg2.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ .reserve-container{
+    padding: 0 15px; 
+    max-width: 546px;
+ }
+ .reserve-inner{
+    .reserve-content{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        .reserve-title{
+            @include textStyle($mainFont, $numberSize2, 35px, $mainColor);
+            margin-top: 20px;
+        }
+        .reserve-text{
+            @include textStyle($secondFont, $middleSize, 32px, $colorLight);
+            margin-top: 20px;
+            font-weight: 700;
+        }
+    }
+    .reserve-btn{
+        width: 140px;
+        height: 45px;
+        margin: 0 auto;
+        margin-top: 45px;
+        border-radius: 1px;
+        background-color: $buttonColor;
+        transition: all .4s linear;
+        &:hover{
+            transform: scale(1.1);
+            background-color: $mainColor;
+        }
+        a{
+        display: block;
+        @include textStyle($secondFont, $linkSize, 45px, $colorLight);
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        }
+    }
+ }
+
 
 
 
@@ -315,6 +366,18 @@
           height: auto;
       }
   }
+   // -----------------reserve------------------------- 
+   .reserve-container{
+    padding: 0 20px; 
+    max-width: 728px;
+ }
+ .reserve-inner{
+     .reserve-content{
+        .reserve-title{
+            margin-top: 100px;
+         }
+     }
+ }
 }
 
 @media screen and (min-width: 768px){
@@ -349,7 +412,13 @@
               }
             }
         }
-      }
+    }
+     // -----------------reserve------------------------- 
+     .reserve-container{
+        padding: 0 25px; 
+        max-width: 942px;
+     }
+
 }
 
 @media screen and (min-width: 992px){
@@ -505,7 +574,7 @@
     }
     // -----------------about-------------------------
     .about{
-        min-height: 1000px;
+        min-height: 900px;
     }
     .about-container{
       padding: 0 50px; 
@@ -626,8 +695,57 @@
     .about-photos_small{
         display: none;
   }
+   // -----------------reserve------------------------- 
+   .reserve{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 360px;
+    background-image: url(../IMG/BGR/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.reserve-container{
+   padding: 0 50px; 
+   max-width: 1100px;
+}
+.reserve-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+   .reserve-content{
+       width: 100%;
+       margin: 0 auto;
+       text-align: left;
+       margin-top: 0;
+       .reserve-title{
+           @include textStyle($mainFont, $reserveSize1, 60px, $mainColor);
+           margin-top: 0;
+       }
+       .reserve-text{
+           @include textStyle($secondFont, $subTitleSize, 32px, $colorLight);
+       }
+   }
+   .reserve-btn{
+       width: 160px;
+       height: 50px;
+       margin: 0 auto;
+       margin-top: 0;
+       border-radius: 1px;
+       align-self: center;
+       a{
+       @include textStyle($secondFont, $linkSize, 50px, $colorLight);
+       }
+   }
+}
 
 }
+
+
+
+
 
 @media screen and (min-width: 1200px){
     .header-container{
@@ -693,6 +811,11 @@
             margin: 0 auto;
             margin-top: -60px;
         }
-      }
+    }
+     // -----------------reserve------------------------- 
+     .reserve-container{
+        padding: 0 165px; 
+        max-width: 6000px;
+     }
 }
 
