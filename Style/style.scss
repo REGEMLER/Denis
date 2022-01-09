@@ -20,9 +20,6 @@
       width: 100%;
       margin: 2rem auto;
       position: relative;
-      #checkbox-menu{
-          display: none;
-      }
   }
   .toggle{
       clear: both;
@@ -35,12 +32,6 @@
       position: absolute;
       top: -10px;
       right: 0;
-  }
-  #checkbox-menu:checked + label .header-list{
-    height: 7rem;
-    opacity: 1;
-    visibility: visible;
-    transition: all .5s linear;
   }
   .header-list{
       display: flex;

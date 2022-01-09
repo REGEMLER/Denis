@@ -1,3 +1,4 @@
+//Слайдер
 $(function(){
     $('.comments-container').slick({
         dots: true,
@@ -25,7 +26,7 @@ $(function(){
       });
 });
 
-
+//Плавный скрол 
 $('a[href^="#"').on('click', function() {
 
   let href = $(this).attr('href');
@@ -35,3 +36,19 @@ $('a[href^="#"').on('click', function() {
   });
   return false;
 });
+
+//Гамбургер меню
+const toggler = document.getElementById(`toggler`);
+const menu = document.getElementById(`header-list`);
+toggler.addEventListener(`click`, () =>{
+    if( menu.style.opacity === `1` && menu.style.height === `7rem`){
+        menu.style.height = `0`;
+        menu.style.visibility = `hidden`;
+        menu.style.opacity = `0`;
+
+    } else{
+        menu.style.height = `7rem`;
+        menu.style.visibility = `visible`;
+        menu.style.opacity = `1`;
+    }
+})

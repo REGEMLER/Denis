@@ -33,6 +33,10 @@ a {
   overflow-x: hidden;
 }
 
+.active {
+  background-color: #D67E35;
+}
+
 .header {
   background-image: url(../IMG/Mobile/header.png);
   background-size: cover;
@@ -54,10 +58,6 @@ a {
   position: relative;
 }
 
-.header-menu #checkbox-menu {
-  display: none;
-}
-
 .toggle {
   clear: both;
   display: block;
@@ -72,14 +72,6 @@ a {
   position: absolute;
   top: -10px;
   right: 0;
-}
-
-#checkbox-menu:checked + label .header-list {
-  height: 7rem;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
 }
 
 .header-list {
