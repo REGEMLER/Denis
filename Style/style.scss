@@ -24,7 +24,6 @@
   .toggle{
       clear: both;
       display: block;
-      width: 100%;
       @include textStyle($secondFont, $subTitleSize, 40px, $buttonColor);
       font-weight: 700;
       background-color: transparent;
