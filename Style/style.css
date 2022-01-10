@@ -1010,9 +1010,62 @@ a {
     padding: 0 25px;
     max-width: 942px;
   }
+  .gallery {
+    min-height: 1200px;
+  }
   .gallery-container {
     padding: 0 25px;
     max-width: 942px;
+  }
+  .gallery-inner .gallery-img_mobile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (2)[300px];
+        grid-template-columns: repeat(300px, 2);
+    -ms-grid-rows: (3)[1fr];
+        grid-template-rows: repeat(1fr, 3);
+    grid-gap: 10px;
+    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+        grid-template-areas: "a f" "c b" "e d";
+  }
+  .gallery-inner .gallery-img_mobile .gallery-item1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  .gallery-inner .gallery-img_mobile .gallery-item2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: b;
+  }
+  .gallery-inner .gallery-img_mobile .gallery-item3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: c;
+  }
+  .gallery-inner .gallery-img_mobile .gallery-item4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: d;
+  }
+  .gallery-inner .gallery-img_mobile .gallery-item5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: e;
+  }
+  .gallery-inner .gallery-img_mobile .gallery-item6 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: f;
+  }
+  .gallery-inner .gallery-img_mobile .gallery-item {
+    margin-bottom: 0;
   }
   .footer-content {
     padding: 0 25px;
@@ -1029,7 +1082,7 @@ a {
   }
   .header-container {
     padding: 0 50px;
-    max-width: 1100px;
+    max-width: 1200px;
   }
   .toggle {
     display: none;
@@ -1166,24 +1219,6 @@ a {
     margin: 0 auto;
     margin-top: 10px;
   }
-  .header-content .header-slogan .header-content-line1 {
-    width: 70px;
-    border-top: 2px solid #FFFFFF;
-    position: absolute;
-    top: 50%;
-    left: 32%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .header-content .header-slogan .header-content-line2 {
-    width: 70px;
-    border-top: 2px solid #FFFFFF;
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
   .header-content .header-btn1 {
     display: block;
     width: 140px;
@@ -1213,12 +1248,31 @@ a {
   .header-content .header-btn2 {
     display: none;
   }
+  .header-content-line1 {
+    width: 70px;
+    height: 2px;
+    border-top: 2px solid #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .header-content-line2 {
+    width: 70px;
+    border-top: 2px solid #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
   .about {
     min-height: 900px;
   }
   .about-container {
     padding: 0 50px;
-    max-width: 1100px;
+    max-width: 1200px;
   }
   .about-cards {
     position: absolute;
@@ -1375,7 +1429,7 @@ a {
   }
   .reserve-container {
     padding: 0 50px;
-    max-width: 1100px;
+    max-width: 1200px;
   }
   .reserve-inner {
     display: -webkit-box;
@@ -1442,7 +1496,7 @@ a {
   .plates-inner {
     margin: 0 auto;
     padding: 0 50px;
-    max-width: 1100px;
+    max-width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1528,7 +1582,7 @@ a {
   }
   .menu-container {
     padding: 0 50px;
-    max-width: 1100px;
+    max-width: 1200px;
   }
   .menu-title {
     width: 100%;
@@ -1561,7 +1615,7 @@ a {
   }
   .comments-container {
     padding: 0 50px;
-    max-width: 1100px;
+    max-width: 1200px;
   }
   .comments-inner .comments-text {
     margin-top: 100px;
@@ -1573,7 +1627,7 @@ a {
   }
   .gallery-container {
     padding: 0 10px;
-    max-width: 1180px;
+    max-width: 1280px;
   }
   .gallery-title {
     margin: 70px auto;
@@ -1636,7 +1690,7 @@ a {
   }
   .footer-content {
     padding: 0 5px;
-    max-width: 1190px;
+    max-width: 1290px;
   }
   .footer-desctop {
     display: block;
@@ -1678,7 +1732,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .header-container {
     padding: 0 165px;
     max-width: 6000px;
