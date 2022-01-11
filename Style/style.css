@@ -1082,7 +1082,7 @@ a {
   }
   .header-container {
     padding: 0 50px;
-    max-width: 1200px;
+    max-width: 1250px;
   }
   .toggle {
     display: none;
@@ -1172,6 +1172,7 @@ a {
     border-radius: 1px;
     -webkit-transition: all .4s linear;
     transition: all .4s linear;
+    margin-left: 50px;
   }
   .menu-btn:hover {
     -webkit-transform: scale(1.1);
@@ -1272,7 +1273,7 @@ a {
   }
   .about-container {
     padding: 0 50px;
-    max-width: 1200px;
+    max-width: 1250px;
   }
   .about-cards {
     position: absolute;
@@ -1429,7 +1430,7 @@ a {
   }
   .reserve-container {
     padding: 0 50px;
-    max-width: 1200px;
+    max-width: 1250px;
   }
   .reserve-inner {
     display: -webkit-box;
@@ -1496,7 +1497,7 @@ a {
   .plates-inner {
     margin: 0 auto;
     padding: 0 50px;
-    max-width: 1200px;
+    max-width: 1250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1582,7 +1583,7 @@ a {
   }
   .menu-container {
     padding: 0 50px;
-    max-width: 1200px;
+    max-width: 1250px;
   }
   .menu-title {
     width: 100%;
@@ -1615,7 +1616,7 @@ a {
   }
   .comments-container {
     padding: 0 50px;
-    max-width: 1200px;
+    max-width: 1250px;
   }
   .comments-inner .comments-text {
     margin-top: 100px;
@@ -1627,7 +1628,7 @@ a {
   }
   .gallery-container {
     padding: 0 10px;
-    max-width: 1280px;
+    max-width: 1340px;
   }
   .gallery-title {
     margin: 70px auto;
@@ -1690,7 +1691,7 @@ a {
   }
   .footer-content {
     padding: 0 5px;
-    max-width: 1290px;
+    max-width: 1340px;
   }
   .footer-desctop {
     display: block;
@@ -1732,7 +1733,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1350px) {
   .header-container {
     padding: 0 165px;
     max-width: 6000px;
